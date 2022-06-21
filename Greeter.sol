@@ -1,17 +1,17 @@
 pragma solidity ^0.4.0;
 
 contract Greeter {
-    string public whatsYourName;
+    string public yourName;
 
     function Greeter() public{
-        whatsYourName="World";
+        yourName="World";
     }
 
     function set(string name)public{
-        whatsYourName = name;
+       yourName = name;
     }
 
     function hello() constant public returns(string){
-        return whatsYourName;
+        return yourName;
     }
 }
